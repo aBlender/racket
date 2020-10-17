@@ -4,7 +4,7 @@ This is a collection of examples that use the Racket **html5-lang**, **website**
 
 ### html5-lang
 
-The following projects are written in Racket and when run will generate HTML, CSS, and JS files as well as run a local web server. Click on the images to see the Racket code.
+The following examples are written in Racket and when run will generate HTML, CSS, and JS files as well as run a local web server. Click on the images to see the Racket code.
 
 | Text Adventure | Blog Template |
 |:--------------:|:-------------:|
@@ -12,7 +12,7 @@ The following projects are written in Racket and when run will generate HTML, CS
 
 ### website-js
 
-The following projects are p5.js examples that have been ported over to Racket as simple modular functions that can easily be used as dynamic backgrounds of bootstrap components. Click on the images for live demos.
+The following examples are p5.js examples that have been ported over to Racket as simple modular functions. Each function generates a Jumbotron style Boostrap component with a dynamic backgrounds. Unique ids are generated automatically to allow multiple p5js canvases per page. Click on the images for live demos.
 
 | L-System Fractals | Recursive Trees |
 |:--------------:|:-------------:|
