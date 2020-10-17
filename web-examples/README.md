@@ -12,7 +12,7 @@ The following examples are written in Racket and when run will generate HTML, CS
 
 ### website-js
 
-The following examples are p5.js examples that have been ported over to Racket as simple modular functions. Each function generates a Jumbotron style Boostrap component with a dynamic backgrounds. Unique ids are generated automatically to allow multiple p5js canvases per page. Click on the images for live demos.
+The following examples are p5.js examples that have been ported over to Racket as simple modular functions. Each function generates a Jumbotron style Boostrap component with a dynamic background. Unique ids are generated automatically to allow multiple p5js canvases per page. Click on the images for live demos.
 
 | L-System Fractals | Recursive Trees |
 |:--------------:|:-------------:|
