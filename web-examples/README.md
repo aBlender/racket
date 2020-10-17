@@ -27,7 +27,7 @@ The following examples are p5.js examples that have been ported over to Racket a
 * `website`
 * `website-js`
 
-## Usage
+## Running the Examples
 
 For **html5-lang** examples:
 * Run the .rkt file and a web server will start
@@ -40,11 +40,11 @@ For **website** and **website-js** examples:
  * webs is short for website-preview but typing the full command isn't necessary
  * This will start a web server from the current directory
 
-Note that the p5js components are already included in website-js and can be access with `(require website-js/components/component-name)`. See below for a full example.
-
  ## Sample Code
  
- Dragon Curve L-System in Racket:
+ Note that the p5js components (**l-system**, **recursive-trees**, and **boids**) are already included in website-js and can be access with `(require website-js/components/component-name)`. See below for a full example.
+ 
+ Dragon Curve L-System:
 ```racket
 #lang racket
 
