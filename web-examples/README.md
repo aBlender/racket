@@ -3,15 +3,24 @@
 This is a collection of examples that use the Racket html5-lang, website, and website-js packages.
 
 ### html5-lang
-<a href="text-adventure.rkt"><img src="text-adventure.png" width=400></a>
-<a href="blog-template.rkt"><img src="blog-template.png" width=400></a>
+
+The follow projects are written in Racket and when run will generate HTML, CSS, and JS files. Click on the images to see the Racket code.
+
+| Text Adventure | Blog Template |
+|:--------------:|:-------------:|
+| [![alt text][ta img]][ta link] | [![alt text][bt img]][bt link] |
 
 ### website-js
-<a href="https://ablender.github.io/fractals/"><img src="fractals.png" width=400></a>
-<a href="https://ablender.github.io/trees/"><img src="recursive-trees.png" width=400></a>
 
-<a href="https://ablender.github.io/paint/"><img src="paint.png" width=400></a>
-<a href="https://ablender.github.io/boids/"><img src="boids.png" width=400></a>
+The follow projects are p5.js examples that have been ported over to Racket as simple modular functions. Click the images for live demos.
+
+| L-System Fractals | Recursive Trees |
+|:--------------:|:-------------:|
+| [![alt text][fr img]][fr link] | [![alt text][rt img]][rt link] |
+
+| Paint Canvas | Boids Algorithm |
+|:--------------:|:-------------:|
+| [![alt text][pa img]][pa link] | [![alt text][bo img]][bo link] |
 
 ## Required Packages
 * `html5-lang`
@@ -30,3 +39,17 @@ For **website** and **website-js** examples:
 * From a terminal, navigate to the location of the out folder and run `raco webs`
  * webs is short for website-preview but the typing the full command is optional
  * This will start a web server from the current directory
+ 
+ [ta link]: text-adventure.rkt
+ [ta img]: text-adventure.png "Text Adventure Preview"
+ [bt link]: blog-template.rkt
+ [bt img]: blog-template.png "Blog Template Preview" 
+ 
+ [fr link]: https://ablender.github.io/fractals/
+ [fr img]: fractals.png "Fractals Preview"
+ [rt link]: https://ablender.github.io/trees/
+ [rt img]: recursive-trees.png "Recursive Trees Preview"
+ [pa link]: https://ablender.github.io/paint/
+ [pa img]: paint.png "Paint Preview"
+ [bo link]: https://ablender.github.io/boids/
+ [bo img]: boids.png "Boids Preview" 
