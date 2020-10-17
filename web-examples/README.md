@@ -42,7 +42,7 @@ For **website** and **website-js** examples:
 
  ## Sample Code
  
- Note that the p5js components (**l-system**, **recursive-trees**, and **boids**) are already included in website-js and can be access with `(require website-js/components/component-name)`. See below for a full example.
+ Note that the p5js components (**l-system**, **recursive-trees**, and **boids**) are already included in website-js and can be accessed with `(require website-js/components/component-name)`. See below for a full example.
  
  Dragon Curve L-System:
 ```racket
