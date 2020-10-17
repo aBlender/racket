@@ -36,8 +36,8 @@ For **html5-lang** examples:
 For **website** and **website-js** examples:
 * Run the .rkt file
  * An `out` folder in the same location will be generated
-* From a terminal, navigate to the location of the out folder and run `raco webs`
- * webs is short for website-preview but the typing the full command is optional
+* From a terminal, navigate to the location of the out folder and run: `raco webs`
+ * webs is short for website-preview but typing the full command isn't necessary
  * This will start a web server from the current directory
  
  [ta link]: text-adventure.rkt
