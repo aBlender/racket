@@ -39,7 +39,45 @@ For **website** and **website-js** examples:
 * From a terminal, navigate to the location of the out folder and run: `raco webs`
  * webs is short for website-preview but typing the full command isn't necessary
  * This will start a web server from the current directory
+
+Note that the p5js components are already included in website-js and can be access with `(require website-js/components/component-name)`. See below for a full example.
+
+ ## Sample Code
  
+ Dragon Curve L-System in Racket:
+```racket
+#lang racket
+
+(require website-js
+         website-js/components/l-system)
+
+(render (list
+         (bootstrap
+          (page index.html
+                (content
+                 (js-runtime)
+                 (include-p5-js)
+                 (l-system #:x "p.width/3"
+                           #:y "p.height/3*2"
+                           #:start-angle -150
+                           #:step 18
+                           #:angle 90
+                           #:axiom "FX"
+                           #:loops 16
+                           #:rules (list (cons "X" "X+YF+")
+                                         (cons "Y" "-FX-Y"))
+                           #:bg-color "#343a40"
+                           #:line-color "rgba(0,255,128,0.4)"
+                           #:max-radius 0
+                           class: "p-5 card bg-transparent mb-0 text-center"
+                           style: (properties height: "100vh")
+                           (card class: "border-dark p-2 mx-auto"
+                                 style: (properties 'overflow: "hidden")
+                                 (h4 class: "mb-0"
+                                     "Dragon Curve")))))))
+        #:to "out")
+```
+
  [ta link]: text-adventure.rkt
  [ta img]: text-adventure.png "Text Adventure Preview"
  [bt link]: blog-template.rkt
