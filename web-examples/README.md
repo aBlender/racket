@@ -1,10 +1,10 @@
 # Racket Web Examples
 
-This is a collection of examples that use the Racket html5-lang, website, and website-js packages.
+This is a collection of examples that use the Racket **html5-lang**, **website**, and **website-js** packages.
 
 ### html5-lang
 
-The follow projects are written in Racket and when run will generate HTML, CSS, and JS files. Click on the images to see the Racket code.
+The following projects are written in Racket and when run will generate HTML, CSS, and JS files as well as run a local web server. Click on the images to see the Racket code.
 
 | Text Adventure | Blog Template |
 |:--------------:|:-------------:|
@@ -12,7 +12,7 @@ The follow projects are written in Racket and when run will generate HTML, CSS, 
 
 ### website-js
 
-The follow projects are p5.js examples that have been ported over to Racket as simple modular functions. Click the images for live demos.
+The following projects are p5.js examples that have been ported over to Racket as simple modular functions that can easily be used as dynamic backgrounds of bootstrap components. Click on the images for live demos.
 
 | L-System Fractals | Recursive Trees |
 |:--------------:|:-------------:|
