@@ -71,10 +71,10 @@ For **website** and **website-js** examples:
                            #:max-radius 0
                            class: "p-5 card bg-transparent mb-0 text-center"
                            style: (properties height: "100vh")
-                           (card class: "border-dark p-2 mx-auto"
-                                 style: (properties 'overflow: "hidden")
-                                 (h4 class: "mb-0"
-                                     "Dragon Curve")))))))
+                     (card class: "border-dark p-2 mx-auto"
+                           style: (properties 'overflow: "hidden")
+                           (h4 class: "mb-0"
+                               "Dragon Curve")))))))
         #:to "out")
 ```
 
