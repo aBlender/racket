@@ -29,7 +29,7 @@
                 (my-nav-link "maker.html"   (list (tool-icon)    "Maker Projects") #:active? (= a-index 1))
                 (my-nav-link "game-dev.html"    (list (game-icon)    "Game Dev")       #:active? (= a-index 2))
                 (my-nav-link "blocklyduino/index.html" (list (blockly-icon) "BlocklyDuino")   #:active? (= a-index 3))
-                (my-nav-link "vr.html"      (list (vr-icon)      "VR")             #:active? (= a-index 4))
+                (my-nav-link "vr/forest.html"      (list (vr-icon)      "VR")             #:active? (= a-index 4))
                 (my-nav-link "https://www.linkedin.com/in/jason-long-le/"   (list (about-icon)   "About")          #:active? (= a-index 5))
                 ))))
 
