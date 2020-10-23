@@ -65,19 +65,19 @@
               #:bg-color "#041109" ;"#343a40"
               #:line-color "rgba(0,255,128,0.4)"
               #:max-radius 0
-              class: "p-5 card bg-transparent mb-0 text-center"
+              class: "p-3 pt-5 card bg-transparent mb-0 text-center"
               style: (properties height: "100vh")
-              (ibm-card #:class "h4 my-auto"
-                        (div class: "p-4"
-                             style: (properties width:  480
-                                                height: 360)
-                         (type-lines (list "Wake up, Neo. . ."
-                                          "The Matrix has you. . ."
-                                          "Follow the white rabbit."
-                                          "Knock, knock, Neo.")))
-                        )
+              (ibm-card #:class "h4 mt-auto mb-2"
+                        #:max-width "640px"
+                        (div class: "aspect aspect-4x3"
+                             (div class: "aspect-inner p-4"
+                                  (type-lines (list "Wake up, Neo. . ."
+                                                    "The Matrix has you. . ."
+                                                    "Follow the white rabbit."
+                                                    "Knock, knock, Neo.")))))
               (ibm-card #:class "mt-auto mb-4"
+                        #:fit? #t
                         (p class: "m-0"
                            "This website was made using a DSL (domain specific language) written in Racket. See more details "
                            (a href: "https://github.com/aBlender/racket/tree/main/web-examples" (b "here")) "."))
-              )))))
+               )))))

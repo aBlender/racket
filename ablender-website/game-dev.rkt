@@ -27,23 +27,24 @@
               #:bg-color "#041109" ;"#343a40"
               #:line-color "rgba(0,255,128,0.4)"
               #:max-radius 0
-              class: "p-5 card bg-transparent mb-0 text-center"
+              class: "p-3 pt-5 card bg-transparent mb-0 text-center"
               style: (properties height: "100vh")
               (responsive-row #:columns 3 #:justify? #t
                               (ibm-card #:class "h-100"
                                         #:link "pong.html"
                                         (card-img-top class: "mb-2" src: (prefix/pathify pong-img))
                                         (h4 (b "JavaSript Pong"))
-                                        "Play the class Pong game against a basic ai. Use the mouse to move the paddle and hit closer to the edge of the paddle for extreme angles."
+                                        "Play the classic Pong game against a basic ai. Use the mouse to move the paddle and hit closer to the edge of the paddle for extreme angles."
                                          )
                               (ibm-card #:class "h-100"
                                         #:link "brick-breaker.html"
                                         (card-img-top class: "mb-2" src: (prefix/pathify brick-breaker-img))
-                                         (h4 (b "JavaScript BrickBreaker"))
+                                         (h4 (b "JavaScript Brick Breaker"))
                                          "Win the game by breaking all of the bricks. Use the mouse to move the paddle."
                                          ))
              
               (ibm-card #:class "mt-auto mb-4"
+                        #:fit? #t
                         (p class: "m-0"
                            "This website was made using a DSL (domain specific language) written in Racket. See more details "
                            (a href: "https://github.com/aBlender/racket/tree/main/web-examples" (b "here")) "."))
@@ -67,15 +68,16 @@
               #:bg-color "#041109" ;"#343a40"
               #:line-color "rgba(0,255,128,0.4)"
               #:max-radius 0
-              class: "p-5 card bg-transparent mb-0 text-center"
+              class: "p-3 pt-5 card bg-transparent mb-0 text-center"
               style: (properties height: "100vh")
-              (ibm-card #:class "my-auto p-5"
+              (ibm-card #:class "mt-auto mb-3 p-3 p-sm-5"
+                        #:fit? #t
                         (canvas id: "gameCanvas"
                                 width: 800
                                 height: 600)
-                        (pong-script)
-                        )
+                        (pong-script))
               (ibm-card #:class "mt-auto mb-3"
+                        #:fit? #t
                         (p class: "m-0"
                            "This website was made using a DSL (domain specific language) written in Racket. See more details "
                            (a href: "https://github.com/aBlender/racket/tree/main/web-examples" (b "here")) "."))
@@ -99,15 +101,17 @@
               #:bg-color "#041109" ;"#343a40"
               #:line-color "rgba(0,255,128,0.4)"
               #:max-radius 0
-              class: "p-5 card bg-transparent mb-0 text-center"
+              class: "p-3 pt-5 card bg-transparent mb-0 text-center"
               style: (properties height: "100vh")
-              (ibm-card #:class "my-auto p-5"
+              (ibm-card #:class "mt-auto mb-3 p-3 p-sm-5"
+                        #:fit? #t
                         (canvas id: "gameCanvas"
                                 width: 800
                                 height: 600)
                         (brick-breaker-script)
                         )
               (ibm-card #:class "mt-auto mb-3"
+                        #:fit? #t
                         (p class: "m-0"
                            "This website was made using a DSL (domain specific language) written in Racket. See more details "
                            (a href: "https://github.com/aBlender/racket/tree/main/web-examples" (b "here")) "."))

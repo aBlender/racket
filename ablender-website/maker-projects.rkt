@@ -25,7 +25,7 @@
               #:bg-color "#041109" ;"#343a40"
               #:line-color "rgba(0,255,128,0.4)"
               #:max-radius 0
-              class: "p-5 card bg-transparent mb-0 text-center"
+              class: "p-3 pt-5 card bg-transparent mb-0 text-center"
               style: (properties height: "100vh")
               (responsive-row #:columns 3 #:justify? #t
                               (ibm-card #:class "h-100"
@@ -48,6 +48,7 @@
                                          ))
              
               (ibm-card #:class "mt-auto mb-4"
+                        #:fit? #t
                         (p class: "m-0"
                            "This website was made using a DSL (domain specific language) written in Racket. See more details "
                            (a href: "https://github.com/aBlender/racket/tree/main/web-examples" (b "here")) "."))

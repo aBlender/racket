@@ -35,16 +35,21 @@
 
 (define (ibm-card #:class [class ""]
                   #:link [link #f]
+                  #:max-width [max-width "100%"]
+                  #:fit? [fit? #f]
                   . content)
+  (define w-100? (if fit? "" "w-100 "))
   (if link
       (a href: link
-         (card class: (~a "bg-light p-3 mx-auto " class)
-               style: (properties font-family: "'Courier New', Courier, monospace")
+         (card class: (~a "bg-light p-3 mx-auto " w-100? class)
+               style: (properties font-family: "'Courier New', Courier, monospace"
+                                  max-width: max-width)
                (card class: "bg-dark border-secondary p-3 text-primary text-left h-100"
                      style: (properties 'overflow: "hidden")
                      content)))
-      (card class: (~a "bg-light p-3 mx-auto " class)
-            style: (properties font-family: "'Courier New', Courier, monospace")
+      (card class: (~a "bg-light p-3 mx-auto " w-100? class)
+            style: (properties font-family: "'Courier New', Courier, monospace"
+                               max-width: max-width)
             (card class: "bg-dark border-secondary p-3 text-primary text-left h-100"
                   style: (properties 'overflow: "hidden")
                   content))))
@@ -120,5 +125,50 @@ a:hover, .navbar-dark .navbar-nav li a:hover, .navbar-dark .navbar-brand a:hover
 .bg-light{
         background-color: #BFB8B8!important;  
 }
+
+.aspect {
+  position: relative;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 100%;
+}
+
+.aspect-inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.aspect-16x9 {
+  padding-bottom: 56.25%;
+}
+
+.aspect-9x16 {
+  padding-bottom: 177.77778%;
+}
+
+.aspect-4x3 {
+  padding-bottom: 75%;
+}
+
+.aspect-3x4 {
+  padding-bottom: 133.33333%;
+}
+
+.aspect-3x2 {
+  padding-bottom: 66.66667%;
+}
+
+.aspect-2x3 {
+  padding-bottom: 150%;
+}
+
+.aspect-1x1 {
+  padding-bottom: 100%;
+}
+
 
 })
