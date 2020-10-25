@@ -71,3 +71,5 @@
 
 (define/provide/img pong-img (list "img" "game-dev" "pong.png"))
 (define/provide/img brick-breaker-img (list "img" "game-dev" "brick-breaker.png"))
+(define/provide/img arduboy-pong-img (list "img" "game-dev" "arduboy-pong.jpg"))
+(define/provide/img arduboy-brick-breaker-img (list "img" "game-dev" "arduboy-brick-breaker.jpg"))

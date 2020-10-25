@@ -29,7 +29,8 @@
               #:max-radius 0
               class: "p-3 pt-5 card bg-transparent mb-0 text-center"
               style: (properties height: "100vh")
-              (responsive-row #:columns 3 #:justify? #t
+              (container
+               (responsive-row #:columns 2 #:justify? #t
                               (ibm-card #:class "h-100"
                                         #:link "pong.html"
                                         (card-img-top class: "mb-2" src: (prefix/pathify pong-img))
@@ -41,7 +42,20 @@
                                         (card-img-top class: "mb-2" src: (prefix/pathify brick-breaker-img))
                                          (h4 (b "JavaScript Brick Breaker"))
                                          "Win the game by breaking all of the bricks. Use the mouse to move the paddle."
+                                         )
+                              (ibm-card #:class "h-100"
+                                        #:link "https://github.com/aBlender/arduino/tree/main/Pong"
+                                        (card-img-top class: "mb-2" src: (prefix/pathify arduboy-pong-img))
+                                        (h4 (b "Arduboy Pong"))
+                                        "Another version of Pong written in Arduino for the Arduboy, a mini game system the size of a credit card! Includes sound and RGB effects."
+                                         )
+                              (ibm-card #:class "h-100"
+                                        #:link "https://github.com/aBlender/arduino/tree/main/BrickBreaker"
+                                        (card-img-top class: "mb-2" src: (prefix/pathify arduboy-brick-breaker-img))
+                                         (h4 (b "Arduboy Brick Breaker"))
+                                         "Another version of Brick Breaker written in Arduino for the Arduboy, a mini game system the size of a credit card! Includes sound and RGB effects."
                                          ))
+               )
              
               (ibm-card #:class "mt-auto mb-4"
                         #:fit? #t
