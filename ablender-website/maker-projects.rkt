@@ -32,7 +32,7 @@
                                         #:link "https://youtu.be/oJ98h3CaXP0"
                                         (card-img-top class: "mb-2" src: (prefix/pathify starwars-arena-img))
                                         (h4 (b "Star Wars Blaster Arena"))
-                                        "Star Wars themed IR shooting gallery coded with Microsoft MakeCode and crafted using paper, cardstock, cardboard, and paint."
+                                        "Star Wars themed IR shooting gallery coded with Microsoft MakeCode on a Circuit Playground Express micro-controller and crafted using paper, cardstock, cardboard, and paint."
                                          )
                               (ibm-card #:class "h-100"
                                         #:link "https://github.com/aBlender/arduino/tree/main/GemmaPendant"

@@ -29,8 +29,7 @@
               #:max-radius 0
               class: "p-3 pt-5 card bg-transparent mb-0 text-center"
               style: (properties height: "100vh")
-              (container
-               (responsive-row #:columns 2 #:justify? #t
+              (responsive-row #:columns 3 #:justify? #t
                               (ibm-card #:class "h-100"
                                         #:link "pong.html"
                                         (card-img-top class: "mb-2" src: (prefix/pathify pong-img))
@@ -54,8 +53,20 @@
                                         (card-img-top class: "mb-2" src: (prefix/pathify arduboy-brick-breaker-img))
                                          (h4 (b "Arduboy Brick Breaker"))
                                          "Another version of Brick Breaker written in Arduino for the Arduboy, a mini game system the size of a credit card! Includes sound and RGB effects."
-                                         ))
-               )
+                                         )
+                              (ibm-card #:class "h-100"
+                                        #:link "https://github.com/thoughtstem/game-engine"
+                                        (card-img-top class: "mb-2" src: (prefix/pathify game-engine-img))
+                                         (h4 (b "Racket Game Engine"))
+                                         "A sprite-based game engine in Racket (Lisp dialect). Some of the game mechanics that I worked on: collision detection, frame-rate independent motion, projectiles, combat, dialog, cutscenes, quest systems, inventory, crafting, and Zelda style flip-screen exploration."
+                                         )
+                              (ibm-card #:class "h-100"
+                                        #:link "https://github.com/thoughtstem/TS-GE-Languages"
+                                        (card-img-top class: "mb-2" src: (prefix/pathify game-engine-dsl-img))
+                                         (h4 (b "Game Engine DSLs"))
+                                         "A suite of domain specific languages based on fandom and game type that allow users to produce fully featured 2D games with a just a few lines of code while allowing full customization."
+                                         )
+                              )
              
               (ibm-card #:class "mt-auto mb-4"
                         #:fit? #t
