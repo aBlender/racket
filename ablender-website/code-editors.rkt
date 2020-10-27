@@ -38,7 +38,7 @@
                                         #:link "https://github.com/aBlender/ardublockly/tree/arduboy_blocks"
                                         (card-img-top class: "mb-2" src: (prefix/pathify ardublockly-arduboy-img))
                                          (h4 (b "Arduboy Support for ArduBlockly"))
-                                         "A set of visual programming blocks for the Arduboy, a credit card sized game system, that generates Arduino Code."
+                                         "A set of visual programming blocks for the Arduboy, a credit card sized game system, that generates Arduino code."
                                          ))
               (ibm-card #:class "mt-auto mb-4"
                         #:fit? #t
