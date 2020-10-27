@@ -5,6 +5,7 @@
          "index.rkt"
          "maker-projects.rkt"
          "game-dev.rkt"
+         "code-editors.rkt"
          )
 
 (render (list (bootstrap-files)
@@ -13,5 +14,6 @@
               (maker-projects)
               (game-dev)
               (pong)
-              (brick-breaker))
+              (brick-breaker)
+              (code-editors))
         #:to "out")

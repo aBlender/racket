@@ -75,3 +75,6 @@
 (define/provide/img arduboy-brick-breaker-img (list "img" "game-dev" "arduboy-brick-breaker.jpg"))
 (define/provide/img game-engine-img (list "img" "game-dev" "game-engine.png"))
 (define/provide/img game-engine-dsl-img (list "img" "game-dev" "game-engine-dsl.png"))
+
+(define/provide/img blocklyduino-rokit-img (list "img" "code-editors" "blocklyduino-rokit.png"))
+(define/provide/img ardublockly-arduboy-img (list "img" "code-editors" "ardublockly-arduboy.jpg"))
